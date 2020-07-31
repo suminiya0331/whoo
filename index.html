@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>음주운전 예방 서비스 후우~</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <!-- Google CDN : w3schools 사이트에서 권장하는 방식 -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
+    <script>
+    function isElementUnderBottom(elem, triggerDiff) {
+  const { top } = elem.getBoundingClientRect();
+  const { innerHeight } = window;
+  return top > innerHeight + (triggerDiff || 0);
+}
+
+function handleScroll() {
+  const elems = document.querySelectorAll('.images');
+  elems.forEach(elem => {
+    if (isElementUnderBottom(elem, -20)) {
+      elem.style.opacity = "0";
+      elem.style.transform = 'translateY(70px)';
+    } else {
+      elem.style.opacity = "1";
+      elem.style.transform = 'translateY(0px)';
+    }
+  })
+}
+
+window.addEventListener('scroll', handleScroll);
+    </script>
+    <script>
+
+	$(document).ready(function(){
+
+		$('#menu1').click(function(){
+
+			var offset = $('#div1').offset(); //선택한 태그의 위치를 반환
+
+                //animate()메서드를 이용해서 선택한 태그의 스크롤 위치를 지정해서 0.4초 동안 부드럽게 해당 위치로 이동함
+
+	        $('html').animate({scrollTop : offset.top}, 0);
+
+		});
+
+	});
+
+  $(document).ready(function(){
+
+		$('#menu2').click(function(){
+
+			var offset = $('#div2').offset(); //선택한 태그의 위치를 반환
+
+                //animate()메서드를 이용해서 선택한 태그의 스크롤 위치를 지정해서 0.4초 동안 부드럽게 해당 위치로 이동함
+
+	        $('html').animate({scrollTop : offset.top}, 0);
+
+		});
+
+	});
+
+  $(document).ready(function(){
+
+		$('#menu3').click(function(){
+
+			var offset = $('#div3').offset(); //선택한 태그의 위치를 반환
+
+                //animate()메서드를 이용해서 선택한 태그의 스크롤 위치를 지정해서 0.4초 동안 부드럽게 해당 위치로 이동함
+
+	        $('html').animate({scrollTop : offset.top}, 0);
+
+		});
+
+	});
+
+  $(document).ready(function(){
+
+		$('#menu4').click(function(){
+
+			var offset = $('#div4').offset(); //선택한 태그의 위치를 반환
+
+                //animate()메서드를 이용해서 선택한 태그의 스크롤 위치를 지정해서 0.4초 동안 부드럽게 해당 위치로 이동함
+
+	        $('html').animate({scrollTop : offset.top}, 0);
+
+		});
+
+	});
+
+  $(document).ready(function(){
+
+		$('#menu5').click(function(){
+
+			var offset = $('#div5').offset(); //선택한 태그의 위치를 반환
+
+                //animate()메서드를 이용해서 선택한 태그의 스크롤 위치를 지정해서 0.4초 동안 부드럽게 해당 위치로 이동함
+
+	        $('html').animate({scrollTop : offset.top}, 0);
+
+		});
+
+	});
+
+  $(document).ready(function(){
+
+		$('#menu4').click(function(){
+
+			var offset = $('#div4').offset(); //선택한 태그의 위치를 반환
+
+                //animate()메서드를 이용해서 선택한 태그의 스크롤 위치를 지정해서 0.4초 동안 부드럽게 해당 위치로 이동함
+
+	        $('html').animate({scrollTop : offset.top}, 0);
+
+		});
+
+	});
+</script>
+    <style>
+       * {
+           font-size: 16px;
+           margin: 0;
+           padding: 0;
+           scroll-behavior: smooth;
+           list-style: none;
+       }
+       header {
+           z-index: 1000;
+           background: #ffffff;
+           position: fixed;
+           width: 100%;
+           height: 70px;
+           left: 0;
+           top: 0;
+           bottom: 0;
+           }
+       nav{
+           display: block;
+           float: right;
+           padding:0px 30px;
+         }
+
+       nav li{
+           display: inline-block;
+           font-size: 15px;
+           margin: 25px 15px 20px 15px;
+           color: #ff7044;
+           font-weight: bold;
+         }
+       .logo {
+           float : left;
+           margin : 15px;
+       }
+       .logo img {height:40px;}
+       #div2{
+         height:700px;
+       }
+       #div2 center {
+         margin-top:50px;
+       }
+       img{
+         display:block;
+       }
+   .images {
+     transition: transform 0.7s, opacity 1s;
+   }
+    </style>
+  </head>
+  <body>
+    <header>
+        <h1 class="logo">
+            <a href="index.html"><img src="img/logo.png"></a>
+        </h1>
+        <nav>
+            <ul>
+                <li id="menu1">후우~</li>
+                <li id="menu2">영상</li>
+                <li id="menu3">프로젝트 배경</li>
+                <li id="menu4">디자인</li>
+                <li id="menu5">서비스</li>
+            </ul>
+        </nav>
+    </header>
+    <div class="hideme" id="div1">
+      <img src="img/index_1.png" width="100%">
+    </div>
+    <br></br><br></br>
+    <div id="div2">
+    <center>
+      <iframe width="1200" height="675" src="https://www.youtube.com/embed/dize4vPAKow" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </center>
+  </div>
+  <br></br><br></br>
+  <div id="div3">
+    <img class="images" src="img/project1.png" width="100%">
+    <img class="images" src="img/project2.png" width="100%">
+    <img class="images" src="img/project4.png" width="100%">
+  </div>
+  <div id="div4">
+    <img class="images" src="img/neck.png" width="95%">
+    <img class="images" src="img/design1.png" width="100%">
+  </div>
+  <div id="div5">
+    <img class="images" src="img/main1.png" width="100%">
+    <img class="images" src="img/main2.png" width="100%">
+    <img class="images" src="img/design2.png" width="100%">
+  </div>
+  <div id="div6">
+      <img src="img/footer.png" width="100%"></img>
+  </div>
+  </body>
+</html>
